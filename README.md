@@ -11,8 +11,12 @@
 - A sale has a optional flag indicating if a customer is new
 - A sale has a optional flag indicating if a customer is existing
 
+## Discount
+- A discount has an amount
+- A discount has a description
+
 ## Discount Rule
-- A discount rule has a **name** used to describe the discount rule on the user interface
+- A discount rule has a **name** used to describe the discount
 - A discount rule has one or more **eligibility criteria**. Each of these eligibility criteria must be met in order for a discount to be applied
 - A discount rule has a single **discount strategy** which can be applied to a **sale** in order to calculate the **discount**
 
