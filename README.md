@@ -1,4 +1,5 @@
-# Discounts - Microservice demonstrating how to handle discounts
+# Discounts
+A dotnet microservice demonstrating how to handle discounts in a flexible fashion
 
 ## Overview
 
