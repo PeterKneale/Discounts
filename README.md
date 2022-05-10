@@ -17,7 +17,7 @@
 - A discount rule has a single **discount strategy** which can be applied to a **sale** in order to calculate the **discount**
 
 ### Eligibility Criteria
-Rules that determine if a discount should be applied to a sale
+Rules that determine if a sale is eligible for a discount
 
 #### Coupon Code
 - This rule is configured using a simple opaque string as a coupon code
@@ -38,6 +38,7 @@ Rules that determine if a discount should be applied to a sale
 - This rule is considered met if a sale is to an existing customer
 
 ### Discount Strategies
+Strategies that calculate the discount to be applied to a sale
 
 #### Flat Amount
 - The discount is calculated by taking a flat amount off the total
