@@ -8,7 +8,7 @@ Microservice demonstrating how to handle discounts
 - A discount rule has one or more **eligibility criteria**. Each of these eligibility criteria must be met in order for a discount to be applied
 - A discount rule has a single **discount strategy** which can be applied to a **sale** in order to calculate the **discount**
 
-## Eligibility Criteria
+### Eligibility Criteria
 Eligibility criteria can be applied to a sale in order to determine if a discount should be applied
 
 #### Coupon Code
