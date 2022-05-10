@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using Discounts.Domain.EligibilityCriteria;
 using Discounts.Domain.ValueTypes;
 using FluentAssertions;
 using Xunit;
@@ -17,7 +18,7 @@ namespace Discounts.Domain.UnitTests.EligibilityCriteria
             var dtDate = DateTime.ParseExact(ruleDate, "yyyy-MM-dd", CultureInfo.InvariantCulture);
             var dtSaleDate = DateTime.ParseExact(saleDate, "yyyy-MM-dd", CultureInfo.InvariantCulture);
             var sale = Sale.CreateInstance(Money.CreateAmount(1), dtSaleDate);
-            var criteria = new Domain.EligibilityCriteria.Date(dtDate);
+            var criteria = new Date(dtDate);
 
             // Act
             var result = criteria.IsEligible(sale);

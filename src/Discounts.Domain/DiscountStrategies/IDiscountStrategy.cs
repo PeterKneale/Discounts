@@ -1,6 +1,6 @@
 ﻿using Discounts.Domain.ValueTypes;
 
-namespace Discounts.Domain;
+namespace Discounts.Domain.DiscountStrategies;
 
 public interface IDiscountStrategy
 {

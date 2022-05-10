@@ -5,7 +5,6 @@ namespace Discounts.Domain.DiscountStrategies;
 public class FlatAmount : IDiscountStrategy
 {
     private readonly Money _amount;
-    
     public FlatAmount(Money amount)
     {
         _amount = amount;
@@ -14,7 +13,7 @@ public class FlatAmount : IDiscountStrategy
     public Discount GetDiscount(Sale sale)
     {
         return sale.Price.Value < _amount.Value
-            ? Discount.None 
-            : Discount.Create(_amount, $"{_amount:C} off");
+            ? Discount.None
+            : Discount.Create(_amount, $"{_amount.Value:C} off");
     }
 }

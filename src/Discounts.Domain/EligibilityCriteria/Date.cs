@@ -4,15 +4,15 @@ namespace Discounts.Domain.EligibilityCriteria;
 
 public class Date : IEligibilityCriteria
 {
-    private readonly DateTime _date;
+    private readonly DateTime _at;
     
-    public Date(DateTime date)
+    public Date(DateTime at)
     {
-        _date = date;
+        _at = at;
     }
     
     public bool IsEligible(Sale sale)
     {
-        return _date.Date == sale.Date;
+        return _at.Date == sale.Date;
     }
 }

@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+
+option csharp_namespace = "Discounts.Api";
+
+package discounts;
+
+import "google/protobuf/timestamp.proto";
+import "google/type/money.proto";
+
+service DiscountsService {
+  rpc GetDiscounts (GetDiscountsRequest) returns (GetDiscountsReply);
+}
+
+message GetDiscountsRequest {
+  google.type.Money saleAmount = 1;
+  google.protobuf.Timestamp saleDate = 2;
+}
+
+message GetDiscountsReply {
+  repeated DiscountDto discounts = 1;
+}
+
+message DiscountDto{
+  google.type.Money amount = 1;
+  string description = 2;
+}
