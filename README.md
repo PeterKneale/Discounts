@@ -2,7 +2,14 @@
 Microservice demonstrating how to handle discounts
 
 - **Discounts rules** use **eligibilty criteria** to determine if a **discount strategy** should be appiled to a **sale** order to calculate a **discount**
- 
+
+## Sale
+- A sale has a total amount
+- A sale has an optional coupon code
+- A sale has an optional date
+- A sale has a optional flag indicating if a customer is new
+- A sale has a optional flag indicating if a customer is existing
+
 ## Discount Rule
 - A discount rule has a **name** used to describe the discount rule on the user interface
 - A discount rule has one or more **eligibility criteria**. Each of these eligibility criteria must be met in order for a discount to be applied
