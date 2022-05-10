@@ -15,7 +15,7 @@ namespace Discounts.Domain.UnitTests.DiscountStrategies
         public void GetDiscountTests(decimal price, decimal discount, decimal expected, string because)
         {
             // Arrange
-            var sale = Sale.CreateInstance(Money.CreateAmount(price));
+            var sale = Sale.CreateInstance(Money.CreateAmount(price), DateTime.Today);
             var strategy = new FlatAmount(Money.CreateAmount(discount));
 
             // Act
