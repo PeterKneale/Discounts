@@ -1,7 +1,8 @@
-# Discounts
-Microservice demonstrating how to handle discounts
+# Discounts - Microservice demonstrating how to handle discounts
 
-- **Discounts rules** use **eligibilty criteria** to determine if a **discount strategy** should be appiled to a **sale** order to calculate a **discount**
+## Overview
+
+**Discounts rules** use **eligibilty criteria** to determine if a **discount strategy** should be appiled to a **sale** in order to calculate a **discount**
 
 ## Sale
 - A sale has a total amount
