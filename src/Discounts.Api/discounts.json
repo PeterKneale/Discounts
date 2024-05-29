@@ -1,7 +1,7 @@
 ﻿{
   "Discounts": [
     {
-      "Name": "$5 off today only",
+      "Name": "$5 off week only",
       "Eligibility": [
         {
           "From": "2022-05-10T00:00:00+00:00",
@@ -10,7 +10,7 @@
         }
       ],
       "Strategy": {
-        "Amount": 11.0,
+        "Amount": 5.0,
         "Type": "FlatAmountConfig"
       }
     },
